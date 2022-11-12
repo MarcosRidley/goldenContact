@@ -23,9 +23,8 @@ app.use(login.validateJwtMiddleware);
 //all routes after this middleware will require a valid token
 
 //routes
-
 app.get('/', (_req, res) => {
-  res.send('Created by Marcos Ridley');
+  res.send('Created by Marcos Ridley as an assignment for Gold Software IT');
 });
 
 //contacts route
