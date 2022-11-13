@@ -48,7 +48,7 @@ Contact.init({
   timestamps: false,
 });
 
-Contact.belongsTo(User, { foreignKey: 'userId' });
+Contact.belongsTo(User, { foreignKey: 'userId', targetKey: 'id' });
 
 
 export default Contact;
