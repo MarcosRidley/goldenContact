@@ -5,7 +5,7 @@ const loginUser = async (_req: Request, res: Response) => {
   const { userName, password } = _req.body;
   const userToken = await loginService.loginUser(password, userName);
   if (!userToken) {
-    return res.status(401).json({ message: 'Incorrect email or password' });
+    return res.status(401).json({ message: 'Incorrect userName or password' });
   }
   return res.status(200).json({ token: userToken });
 };

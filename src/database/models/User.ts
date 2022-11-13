@@ -34,6 +34,8 @@ User.init({
   timestamps: false,
 });
 
+User.hasMany(Contact, { foreignKey: 'userId' });
+
 
 
 export default User;
