@@ -34,7 +34,7 @@ User.init({
   timestamps: false,
 });
 
-User.hasMany(Contact, { foreignKey: 'userId' });
+// User.hasMany(Contact, { foreignKey: 'userId' });
 
 
 
